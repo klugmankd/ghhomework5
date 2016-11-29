@@ -43,7 +43,7 @@ class PostController extends Controller
     /**
      * Matches /posts/*
      *
-     * @Route("/posts/create/{id}/{title}/{content}", name="create_post", requirements={"id" = "\d+"})
+     * @Route("posts/create/{id}/{title}/{content}", name="create_post", requirements={"id" = "\d+"})
      * @Method("POST")
      */
     public function createAction(Request $request) {

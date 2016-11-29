@@ -31,7 +31,7 @@ class CommentController extends Controller
     /**
      * Matches /comments/*
      *
-     * @Route("/comments/create/{id}/{idAuthor}/{content}", name="create_comment", requirements={"id" = "\d+"})
+     * @Route("comments/create/{id}/{idAuthor}/{content}", name="create_comment", requirements={"id" = "\d+"})
      * @Method("POST")
      */
     public function createAction(Request $request) {

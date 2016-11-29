@@ -37,8 +37,6 @@ class User
         if ($username == substr($file_username, 0, strlen($file_username)-1) && $password == $file_password) {
             $msg = "Welcome user $username!";
         } else $msg = "Invalid username or password";
-//        $msg = $file_password;
-//        $msg = substr($file_username, 0, strlen($file_username)-1);
         return $msg;
     }
 }
