@@ -14,7 +14,7 @@ class UserController
     /**
      * Matches /users/*
      *
-     * @Route("users/create/{id}/{username}/{password}", name="create_user", requirements={"id" = "\d+"})
+     * @Route("users/create", name="create_user", requirements={"id" = "\d+"})
      * @Method("POST")
      */
     public function createAction(Request $request) {
@@ -31,7 +31,7 @@ class UserController
     /**
      * Matches /users/*
      *
-     * @Route("users/login/{id}/{username}/{password}", name="login_user", requirements={"id" = "\d+"})
+     * @Route("users/login", name="login_user", requirements={"id" = "\d+"})
      * @Method("POST")
      */
     public function loginAction(Request $request) {

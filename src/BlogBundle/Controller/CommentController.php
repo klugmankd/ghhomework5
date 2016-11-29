@@ -31,7 +31,7 @@ class CommentController extends Controller
     /**
      * Matches /comments/*
      *
-     * @Route("comments/create/{id}/{idAuthor}/{content}", name="create_comment", requirements={"id" = "\d+"})
+     * @Route("comments/create", name="create_comment")
      * @Method("POST")
      */
     public function createAction(Request $request) {
@@ -48,7 +48,7 @@ class CommentController extends Controller
     /**
      * Matches /comments/*
      *
-     * @Route("comments/update/{id}/{newContent}", name="update_comment", requirements={"id" = "\d+"})
+     * @Route("comments/update/{id}", name="update_comment", requirements={"id" = "\d+"})
      * @Method("PATCH")
      */
     public function updateAction(Request $request) {

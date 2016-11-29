@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class PostController extends Controller
 {
-    
+
     /**
      * @Route("/", name="homepage")
      */
@@ -43,7 +43,7 @@ class PostController extends Controller
     /**
      * Matches /posts/*
      *
-     * @Route("posts/create/{id}/{title}/{content}", name="create_post", requirements={"id" = "\d+"})
+     * @Route("posts/create", name="create_post")
      * @Method("POST")
      */
     public function createAction(Request $request) {
@@ -60,7 +60,7 @@ class PostController extends Controller
     /**
      * Matches /posts/*
      *
-     * @Route("posts/update/{id}/{newTitle}/{newContent}", name="update_post", requirements={"id" = "\d+"})
+     * @Route("posts/update/{id}", name="update_post", requirements={"id" = "\d+"})
      * @Method("PUT")
      */
     public function updateAction(Request $request) {
